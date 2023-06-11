@@ -1,0 +1,9 @@
+.mainContainer{
+    display: flex;
+    align-items: center;
+}
+
+.me{
+    height: auto;
+    width: auto;
+}
