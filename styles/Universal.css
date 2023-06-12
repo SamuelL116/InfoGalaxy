@@ -150,3 +150,12 @@ figcaption {
   font-family: 'Times New Roman', Times, serif;
   font-size: smaller;
 }
+
+input[type="text"] {
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
