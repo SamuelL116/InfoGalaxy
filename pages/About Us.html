@@ -59,6 +59,19 @@
       </ul>
     </p>
 </div>
+
+<div id="root"></div>
+
+<script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script type="text/babel">
+  import SearchBar from '../JS/searchbar.js';
+
+  ReactDOM.render(<SearchBar />, document.getElementById('root'));
+</script>
+<script src="../JS/searchbar.js"></script>
+
 <div class="update" style="float:right;">
   <span id="timedate"></span>
   <script src="../JS/clock.js"></script>
