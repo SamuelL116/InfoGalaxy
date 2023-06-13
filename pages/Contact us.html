@@ -8,6 +8,7 @@
 	<link href="../styles/Universal.css" rel="stylesheet"/>
 	<link href="../styles/Nav.css" rel="stylesheet"/>
 	<link href="../styles/Footer.css" rel="stylesheet"/>
+	<link href="../styles/ContactUsStyles.css" rel="stylesheet"/>
   </head>
   <body>
 	<nav class="page-nav">
@@ -33,7 +34,7 @@
 		  </form>
     </nav>
 
-	<h1>Contact InGalaxy</h1>
+	<h1>Contact InfoGalaxy</h1>
 	 <p>InfoGalaxy</p>
 	 <p>Pretoria<br/>
 	    Gauteng<br/>
@@ -48,47 +49,47 @@
 	    whether you're interested in our services or are already using it, 
 	    don't hesitate to contact us using our enquiry form below(<strong>Bold fields</strong> are required)</p>
 
-		<form method="Post" action="support.aspx">
-		</form>
+		<form method="Post" action="../email.php">
+		
 		 <fieldset>
 		   <legend>
 		     Your details and enquiry
 		   </legend>
 		 <ol>
 		   <li>
-		     <label>
-			<strong>Name</strong><br />
-			<input type="text"
-			       name="UserName"/>
-		     </label>
+		     <label for="name">
+			<strong>Name:</strong><br />
+			</label>
+			<input type="text" name="name" id="name" required>
+		    
 		   </li>
 		   <li>
-		     <label>
-			Telephone<br />
+		     <label for="Telephone">
+			Telephone</label><br />
 			<input type="text"
-			       name="Phone"/>
-		     </label>
+			       name="Phone">
+		     
 		   </li>
 		   <li>
-		     <label>
-			<strong>Email Adress</strong><br />
-			<input type="text"
-			       name="Email"/>
-		     </label>
+		     <label for="email">
+			<strong>Email</strong><br /></label>
+			<input type="email" id="email" name="Email" required>
+		     
 		   </li>
 		   <li>
-		     <label>
-			<strong>Message</strong><br />
-			<textarea name="Message"
-			 cols="30" rows="5">Add your message here
-			</textarea>
-		     </label>
+		     <label for="message">
+			<strong>Message</strong></label><br />
+			<textarea id="message" name="message" required
+			 cols="30" rows="5">Add your message here</textarea>
+		     
 		   </li>
 		</ol>
 		 </fieldset>
-		 <input type="submit" value="Submit"/>
+		 <button type="submit">send</button>
+		</form>
 		 <div class="update" style="float:right;">
 			<span id="timedate"></span>
 			<script src="../JS/clock.js"></script>
+			<script src="../JS/contactus.js" type="module"></script>
 	</body>
 </html>
