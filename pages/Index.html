@@ -8,6 +8,7 @@
     <link href="../styles/Universal.css" rel="stylesheet"/>
     <link href="../styles/Nav.css" rel="stylesheet"/>
     <link href="../styles/Footer.css" rel="stylesheet"/>
+    <link href="../styles/login.css" rel="stylesheet"/>
 </head>
 <body>
     <nav class="page-nav">
@@ -26,12 +27,52 @@
             <a href="../pages/About Us.html">About Us</a>
             <a href="../pages/Contact us.html">Contact Us</a>
         </div>
-        <form class="searchbar">
+        <form class="SearchBar">
             <label for="search">Search:</label>
             <input type="text" id="search" name="search">
             <input type="submit" value="Submit">
-          </form>
+        
+        </form>
+        <a id="login-btn">Login</a>
+        <a id="signup-btn">Sign up</a>
+
     </nav>
+
+    <div id="login-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Login</h2>
+          <form action="login.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Login</button>
+          </form>
+        </div>
+      </div>
+
+      <div id="signup-modal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h2>Sign Up</h2>
+          <form action="signup.php" method="post">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="submit">Sign Up</button>
+          </form>
+        </div>
+      </div>    
+
     <header>
         <h1><img class="logo" src="../images/image.png"/>InfoGalaxy</h1>
         <p><h4>An simple and easy way to find information on everything tech</h4></p>
@@ -116,6 +157,7 @@
 </div>
 <script src="../JS/clock.js"></script>
 <script src="../JS/searchbar.js" type="module"></script>
+<script src="../JS/login.js"></script>
 </body>
 </br>
 <footer class="page-footer">
