@@ -1,4 +1,4 @@
-import React, { useState } from 'eact';
+import React, { useState } from 'react';
 
 function SearchBar() {
   const [searchTerm, setSearchTerm] = useState('');
