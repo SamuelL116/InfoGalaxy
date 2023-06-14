@@ -1,19 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Quiz</title>
-  <link rel="stylesheet" type="text/css" href="../styles/Test.css">
+    <title>Quiz</title>
+    <link rel="stylesheet" type="text/css" href="../styles/Test.css">
 </head>
 <body>
-  <div class="quiz">
-    <h1>Quiz</h1>
-    <p id="question"></p>
-    <div id="options"></div>
-    <button id="submit">Submit</button>
-    <p id="result"></p>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="../JS/test.js"></script>
+    <div id="container">
+        <h1>Quiz</h1>
+        <div id="timer-container">
+          <p id="timer"></p>
+          <div id="progress-bar-container">
+            <div id="progress-bar"></div>
+          </div>
+        </div>
+        <div id="question-container">
+          <p id="question"></p>
+          <div id="options-container"></div>
+          <button id="submit">Submit</button>
+        </div>
+        <div id="result-container">
+          <p id="result"></p>
+          <button id="start">Start Quiz</button>
+        </div>
+      </div>
+    <script src="../JS/test.js"></script>
 </body>
 </html>
