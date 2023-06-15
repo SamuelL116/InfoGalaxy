@@ -68,6 +68,7 @@ nav {
   border-radius: 5px;
   margin-right: 20px;
   margin-left: 20px;
+  font-size: smaller;
 }
 
 .logo a {
@@ -157,10 +158,10 @@ nav {
   display: block;
 }
 
-.search-bar {
+/*.search-bar {
   display: flex;
   align-items: center;
-}
+}*/
 
 .search-bar input[type=text] {
   padding: 10px;

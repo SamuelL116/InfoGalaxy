@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feedback Page</title>
+    <link rel="stylesheet" type="text/css" href="../styles/feedback.css">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InfoGalaxy</title>
+    <link rel="icon" type="image/png" href="../images/image.png"/>
+    <link href="../styles/Universal.css" rel="stylesheet"/>
+    <link href="../styles/Nav.css" rel="stylesheet"/>
+    <link href="../styles/login.css" rel="stylesheet"/>
+</head>
+<body>
+    <nav class="page-nav">
+        <div class="logo1">
+            <img src="../images/image.png"/>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="../pages/Index.html">Home</a></li>
+            <li><a href="../pages/About Us.html">About Us</a></li>
+            <li><a href="../pages/Contact us.html">Contact Us</a></li>
+        
+        
+        <div class="dropdown">
+            <button class="dropbtn">Topics</button>
+            <div class="dropdown-content">
+                <a href="../pages/Phones.html">Phones</a>
+                <a href="../pages/Laptops.html">Laptops</a>
+                <a href="../pages/AI technologies.html">AI technologies</a>
+                <a href="../pages/Autonomous vehicles.html">Autonomous vehicles</a>
+                <a href="../pages/Smart Homes.html">Smart Homes</a>
+              </div>
+            </div>
+        
+            <li><a href="../pages/Test.html">Test Yourself!</a></li>
+            <li><a href="Feedback.html">Feedback</a></li>
+        </ul>
+        <div>
+            
+        </div>
+
+      </nav>
+
+    <div class="feedback-container">
+        <h1>Thank you for taking the time to provide feedback!</h1>
+        <form id="feedback-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name-input" name="name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email-input" name="email" required>
+            <br>
+            <label for="feedback">How can we improve our service?</label>
+            <br>
+            <textarea id="feedback-input" name="feedback" rows="5" cols="50" required></textarea>
+            <br>
+            <label for="category">How can we improve our service?</label>
+            <br>
+            <input type="radio" id="positive" name="category" value="positive" required>
+            <label for="positive">Positive</label>
+            <br>
+            <input type="radio" id="negative" name="category" value="negative" required>
+            <label for="negative">Negative</label>
+            <br>
+            <input type="radio" id="neutral" name="category" value="neutral" required>
+            <label for="neutral">Neutral</label>
+            <br>
+            <label for="details">Any additional feedback or details?</label>
+            <br>
+            <textarea id="details-input" name="details" rows="5" cols="50"></textarea>
+            <br>
+            <input id="submit" type="submit" value="Submit">
+        </form>
+        <div id="sending-animation" style="display: none;">
+            <div class="loadingio-spinner-pulse-v9vjkq5kcm">
+                <div class="ldio-8a5u9h0w6o">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Contact us at info@example.com</p>
+        <p>Privacy Policy</p>
+    </footer>
+
+    <script src="../JS/feedback.js"></script>
+    <script src="../JS/searchbar.js" type="module"></script>
+</body>
+</html>

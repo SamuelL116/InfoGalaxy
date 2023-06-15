@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #555;
+}
+
+#sending-animation {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.loadingio-spinner-pulse-v9vjkq5kcm {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    overflow: hidden;
+    background: none;
+}
+
+.ldio-8a5u9h0w6o {
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: scale(1);
+    background: #333;
+}
+
+.ldio-8a5u9h0w6o div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.ldio-8a5u9h0w6o div:nth-child(1) {
+    animation: ldio-8a5u9h0w6o 1s linear infinite;
+}
+
+.ldio-8a5u9h0w6o div:nth-child(2) {
+    animation: ldio-8a5u9h0w6o 1s linear infinite;
+    animation-delay: 0.2s;
+}
+
+.ldio-8a5u9h0w6o div:nth-child(3) {
+    animation: ldio-8a5u9h0w6o 1s linear infinite;
+    animation-delay: 0.4s;
+}
+
+@keyframes ldio-8a5u9h0w6o {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#sent-animation {
+    text-align: center;
+    margin-top: 50px;
+    color: #333;
+}
+
+#sent-animation h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#sent-animation p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#sent-animation button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#sent-animation button:hover {
+    background-color: #555;
+}
