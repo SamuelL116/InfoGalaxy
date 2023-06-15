@@ -68,7 +68,7 @@ function startTimer() {
     timerElement.innerText = "Time remaining: " + timeLeft + " seconds";
 
     // Update the progress bar
-    var progress = (timeLeft / 60) * 100;
+    var progress = (timeLeft / 600) * 100;
     progressBarElement.style.width = progress + "%";
 
     // Check if the time is up
@@ -131,7 +131,7 @@ startButtonElement.addEventListener("click", function() {
   // Reset the variables for the quiz
   currentQuestion = 0;
   score = 0;
-  timeLeft = 60;
+  timeLeft = 600;
 
   // Hide the result and start button
   resultContainerElement.style.display = "none";

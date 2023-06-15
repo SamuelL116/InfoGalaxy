@@ -3,8 +3,85 @@
 <head>
     <title>Quiz</title>
     <link rel="stylesheet" type="text/css" href="../styles/Test.css">
+    <link rel="icon" type="image/png" href="../images/image.png"/>
+    <link href="../styles/Universal.css" rel="stylesheet"/>
+    <link href="../styles/Nav.css" rel="stylesheet"/>
+    <link href="../styles/Footer.css" rel="stylesheet"/>
+    <link href="../styles/login.css" rel="stylesheet"/>
 </head>
 <body>
+  <nav class="page-nav">
+    <div class="logo1">
+        <img src="../images/image.png"/>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="../pages/Index.html">Home</a></li>
+        <li><a href="../pages/About Us.html">About Us</a></li>
+        <li><a href="../pages/Contact us.html">Contact Us</a></li>
+    
+    
+    <div class="dropdown">
+        <button class="dropbtn">Topics</button>
+        <div class="dropdown-content">
+            <a href="../pages/Phones.html">Phones</a>
+            <a href="../pages/Laptops.html">Laptops</a>
+            <a href="../pages/AI technologies.html">AI technologies</a>
+            <a href="../pages/Autonomous vehicles.html">Autonomous vehicles</a>
+            <a href="../pages/Smart Homes.html">Smart Homes</a>
+          </div>
+        </div>
+    
+        <li><a href="../pages/Test.html">Test Yourself!</a></li>
+    </ul>
+    <div>
+        
+    </div>
+    <form class="Search-bar">
+        <input type="text" id="search" placeholder="search..." name="search">
+        <input type="submit" value="search">
+    
+    </form>
+    <a id="login-btn">Login</a>
+    <a id="signup-btn">Sign up</a>
+
+</nav>
+
+<div id="login-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Login</h2>
+      <form action="login.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <div id="signup-modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Sign Up</h2>
+      <form action="signup.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </div>    
+
     <div id="container">
         <h1>Quiz</h1>
         <div id="timer-container">
@@ -23,6 +100,9 @@
           <button id="start">Start Quiz</button>
         </div>
       </div>
-    <script src="../JS/test.js"></script>
+      <script src="../JS/clock.js"></script>
+      <script src="../JS/searchbar.js" type="module"></script>
+      <script src="../JS/login.js"></script>
+      <script src="../JS/test.js"></script>
 </body>
 </html>

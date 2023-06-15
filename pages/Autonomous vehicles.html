@@ -5,33 +5,85 @@
     <link rel="icon" type="image/png" href="../images/image.png"/>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="../images/image.png"/>
     <link href="../styles/Universal.css" rel="stylesheet"/>
     <link href="../styles/Nav.css" rel="stylesheet"/>
     <link href="../styles/Footer.css" rel="stylesheet"/>
+    <link href="../styles/login.css" rel="stylesheet"/>
   </head>
   <body>
     <nav class="page-nav">
-        <div class="container">
-            <a href="../pages/Index.html">Home</a>
-            <div class="dropdown">
-                <button class="dropbtn">Topics</button>
-                <div class="dropdown-content">
-                  <a href="../pages/Phones.html">Phones</a>
-                  <a href="../pages/Laptops.html">Laptops</a>
-                  <a href="../pages/AI technologies.html">AI technologies</a>
-                  <a href="../pages/Autonomous vehicles.html">Autonomous vehicles</a>
-                  <a href="../pages/Smart Homes.html">Smart Homes</a>
-                </div>
-              </div>
-            <a href="../pages/About Us.html">About Us</a>
-            <a href="../pages/Contact us.html">Contact Us</a>
-        </div>
-        <form class="searchbar">
-          <label for="search">Search:</label>
-          <input type="text" id="search" name="search">
-          <input type="submit" value="Submit">
+      <div class="logo1">
+          <img src="../images/image.png"/>
+      </div>
+
+      <ul class="nav-links">
+          <li><a href="../pages/Index.html">Home</a></li>
+          <li><a href="../pages/About Us.html">About Us</a></li>
+          <li><a href="../pages/Contact us.html">Contact Us</a></li>
+      
+      
+      <div class="dropdown">
+          <button class="dropbtn">Topics</button>
+          <div class="dropdown-content">
+              <a href="../pages/Phones.html">Phones</a>
+              <a href="../pages/Laptops.html">Laptops</a>
+              <a href="../pages/AI technologies.html">AI technologies</a>
+              <a href="../pages/Autonomous vehicles.html">Autonomous vehicles</a>
+              <a href="../pages/Smart Homes.html">Smart Homes</a>
+            </div>
+          </div>
+      
+          <li><a href="../pages/Test.html">Test Yourself!</a></li>
+      </ul>
+      <div>
+          
+      </div>
+      <form class="Search-bar">
+          <input type="text" id="search" placeholder="search..." name="search">
+          <input type="submit" value="search">
+      
+      </form>
+      <a id="login-btn">Login</a>
+      <a id="signup-btn">Sign up</a>
+
+  </nav>
+
+  <div id="login-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Login</h2>
+        <form action="login.php" method="post">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+
+          <button type="submit">Login</button>
         </form>
-    </nav>
+      </div>
+    </div>
+
+    <div id="signup-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Sign Up</h2>
+        <form action="signup.php" method="post">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required>
+
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>    
+
 <div class="content">
   <h1>Autonomous vehicles</h1>
 </br>
@@ -66,6 +118,8 @@ Here's some more information about autonomous vehicles:
 <div class="update" style="float:right;">
   <span id="timedate"></span>
   <script src="../JS/clock.js"></script>
+  <script src="../JS/searchbar.js" type="module"></script>
+  <script src="../JS/login.js"></script>
   </body>
   <footer class="page-footer">
   </br>
